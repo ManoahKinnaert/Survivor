@@ -41,3 +41,11 @@ def experiment_recursive_fixed_depth(steps, max_island_size=100):
                 temp += end - start 
         times.append(temp / (size ** 2))    
     return times
+
+if __name__ == "__main__":
+    print("Testing correctness of recursive solution")
+    try:
+        test_chance_recursive()
+        print("Tests passed")
+    except AssertionError as e:
+        print("Tests failed:", e)
