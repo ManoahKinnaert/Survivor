@@ -31,7 +31,7 @@ def experiment_recursive_fixed_island_size(size: int=2, max_depth: int=10):
 # determine time usage of the recursive solution with 'fixed depth' being a fixed amount of steps
 def experiment_recursive_fixed_depth(steps, max_island_size=100):
     times = []
-    for size in trange(2, max_island_size):
+    for size in trange(2, max_island_size + 1):
         temp = 0
         for x in range(size):
             for y in range(size):
